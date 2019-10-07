@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:padding="10dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <!--头像-->
+        <ImageView
+            android:src="@mipmap/user_touxiang"
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+             />
+
+        <TextView
+            android:text="未登录"
+            android:id="@+id/paccount"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@null"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true" />
+        <android.support.v7.widget.CardView
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:id="@+id/exit"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/paccount"
+            android:layout_centerInParent="true"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="注销" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_below="@+id/btn_huxitongji"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+
+            android:id="@+id/view0"/>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+            android:layout_below="@+id/btn_tixing"
+            android:id="@+id/view1"/>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/view2"/>
+
+        <LinearLayout
+            android:id="@+id/btn_zhuanzhutongji"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:background="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/zhuanzhu1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专注"
+                android:textSize="18dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginLeft="-37dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_shuimiantongji"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:background="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="137dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/shuimian"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="睡眠"
+                android:textSize="18dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginLeft="-37dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_huxitongji"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:background="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="276dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/huxi"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呼吸"
+                android:textSize="18dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginLeft="-37dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/view3"
+
+            />
+        <Button
+            android:id="@+id/btn_tixing"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#fff"
+            android:text="每日提醒"
+            android:textSize="16dp"
+            android:layout_below="@+id/btn_huxitongji"
+            style="?android:attr/borderlessButtonStyle"
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/view4"
+
+            />
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/view5"
+            android:layout_marginTop="510dp"
+            />
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#fff"
+            android:text="设置"
+            android:textSize="16dp"
+            android:layout_below="@+id/btn_tixing"
+            style="?android:attr/borderlessButtonStyle"
+            />
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#F8F8F8"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/view6"
+            android:layout_marginTop="560dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

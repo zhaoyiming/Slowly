@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_log">Sign In</string>
+    <string name="app_r">Sign Up</string>
+    <string name="slogan">减压助眠</string>
+
+
+
+    <string name="title">标题</string>
+    <string name="summary">内容</string>
+    <string name="Password">密    码</string>
+    <string name="Eamil">邮    箱</string>
+    <string name="Login">登录</string>
+    <string name="register">Don\'t have an account?</string>
+    <string name="back">Have an account?</string>
+
+    <string name="Account">账号</string>
+    <string name="AccountH">用户名</string>
+    <string name="AccountHint">用户名/邮箱</string>
+    <string name="ConfirmPwd">确认密码</string>
+    <string name="RememberPwd">记住密码</string>
+    <string name="ModifyPwd">修改密码</string>
+    <string name="AutoLogIn">自动登录</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="null_hint">账号或密码不能为空</string>
+    <string name="not_email">邮箱格式错误</string>
+    <string name="account_invalid_hint">用户名不是有效的手机号</string>
+    <string name="modify_hint">点击修改</string>
+    <string name="old_pwd_hint">请输入原密码</string>
+    <string name="new_pwd_hint">请输入新密码</string>
+    <string name="modify_not_null">原密码、新密码、确认密码均不能为空</string>
+    <string name="modify_not_equal">确认密码需与新密码保持一致</string>
+    <string name="modify_not_right">原密码错误</string>
+    <string name="modify_success">修改成功</string>
+    <string name="next">下一步</string>
+    <string name="finish">完成设置</string>
+    <string name="uploadAvatar">上传头像</string>
+    <string name="takePhoto">拍照</string>
+    <string name="chooseFromGallery">从相册选择</string>
+    <string name="exit_hint">再按一次退出程序</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+
+    <string name="times">times</string>
+    <string name="usetimes">您已使用slowly</string>
+    <string name="text_times">7</string>
+    <string name="text_days">3</string>
+    <string name="days">days</string>
+    <string name="usedays">Slowly已陪伴了您</string>
+    <string name="zhuanzhu">TODO</string>
+    <string name="text_zhuanzhu">专注</string>
+    <string name="text_jinri">今日</string>
+    <string name="text_zhuanzhushijian1">专注时间</string>
+    <string name="text_zhuanzhucishu1">专注次数</string>
+    <string name="text_zongji">总计</string>
+    <string name="text_zhuanzhushijian2">专注时间</string>
+    <string name="text_zhuanzhucishu2">专注次数</string>
+    <string name="text_shuimiantongji">睡眠统计</string>
+    <string name="text_zhuanzhutongji">专注统计</string>
+    <string name="text_huxitongji">呼吸统计</string>
+</resources>

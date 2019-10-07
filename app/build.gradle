@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+        applicationId "com.ming.slowly"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okio:okio:1.7.0'
+//    implementation 'com.github.pinguo-zhouwei:EasyBlur:v1.0.0'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    implementation 'com.github.iammert:MaterialIntroView:f7b36b7'
+    api 'com.contrarywind:Android-PickerView:4.1.6'
+    implementation 'com.github.Lauzy:PlayPauseView:1.0.7'
+    implementation 'com.github.aliab:circular-music-progressbar:v1.3.0'
+    api 'com.qiushui:blurredview:0.8.1'
+    api 'com.ryan.rv_gallery:rv-gallery:1.1.2'
+    api 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

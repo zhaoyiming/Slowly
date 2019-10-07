@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     tools:context="com.ming.slowly.MainActivity">
+        <com.ming.slowly.WrappingSlidingDrawer
+
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <ImageView
+
+                android:src="@drawable/upup"
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+
+                android:background="#2699FB"
+                android:orientation="horizontal"
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/recycle_slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </com.ming.slowly.WrappingSlidingDrawer>
+    </LinearLayout>
+

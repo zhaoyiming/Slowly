@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="19dp"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:hint="@string/AccountHint"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/appLog"
+            android:layout_alignStart="@+id/password" />
+
+        <TextView
+            android:id="@+id/appLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/app_log"
+            android:textColor="@color/huise"
+            android:textSize="25sp"
+            android:layout_marginTop="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:id="@+id/login_remember"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/huilan"
+            android:checked="false"
+            android:text="@string/RememberPwd"
+            android:textSize="15sp"
+            android:layout_below="@+id/password"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:id="@+id/login_auto"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:checked="false"
+            android:text="@string/AutoLogIn"
+            android:textSize="15sp"
+            android:layout_below="@+id/password"
+            android:layout_toEndOf="@+id/login_remember" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:ems="10"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/account"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/login_remember"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:textAllCaps="false"
+            android:text="@string/register"
+            android:textColor="@color/huilan"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/login"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/fangke"
+            android:textColor="@color/huilan"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/register"
+            android:text="游客访问"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

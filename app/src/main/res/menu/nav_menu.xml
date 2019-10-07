@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/theme"
+            android:id="@+id/language"
+            android:title="語言" />
+        <item
+            android:icon="@drawable/tixing"
+            android:id="@+id/rili"
+            android:title="日常提醒" />
+        <item
+            android:icon="@drawable/people"
+            android:id="@+id/people"
+            android:title="關於我們"/>
+
+        <item
+            android:icon="@drawable/setting"
+            android:id="@+id/nav_setting"
+            android:title="設置" />
+    </group>
+</menu>
